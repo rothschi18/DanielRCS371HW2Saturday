@@ -16,7 +16,7 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //declarePlayers();
+        declarePlayers();
         TeamData = new TeamRosterDatabase(this);
         TeamData.viewTeams();
 
@@ -62,6 +62,7 @@ public class MainActivity extends ActionBarActivity {
         team2.addPlayer(player4);
         team2.addPlayer(player5);
         team2.addPlayer(player6);
+
         TeamData.addTeam(team1);
         TeamData.addTeam(team2);
 
